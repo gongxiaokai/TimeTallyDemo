@@ -227,9 +227,15 @@ static CGFloat const kMaxCalCount = 9;
 
     } else {
         //总位数不超过9 整数部分
+        self.nValue = [NSString stringWithFormat:@"%@",@([self.nValue doubleValue])];
         if (self.nValue.length > kMaxCalCount) {
             self.nValue = [NSString stringWithFormat:@"%0.2f",[self.nValue doubleValue]];
-            self.nValue = [self.nValue substringToIndex:kMaxCalCount];
+            if ([self.nValue doubleValue] > 0) {
+
+                self.nValue = [self.nValue substringToIndex:kMaxCalCount];
+            } else {
+                self.nValue = @"0";
+            }
         }
     }
 
@@ -262,6 +268,8 @@ static CGFloat const kMaxCalCount = 9;
 
 //退格
 - (void)clickDel {
+    self.nValue = [NSString stringWithFormat:@"%@",@([self.nValue doubleValue])];
+
     if (self.nValue.length > 0) {
         self.nValue = [self.nValue substringWithRange:NSMakeRange(0, self.nValue.length-1)];
     }
