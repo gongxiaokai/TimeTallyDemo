@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TallyListCell">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="156"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="156"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E5p-bS-Zll">
+                        <rect key="frame" x="10" y="10" width="110" height="110"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlv-jc-eQN">
+                        <rect key="frame" x="0.0" y="125" width="130" height="31"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="E5p-bS-Zll" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="width" constant="-20" id="A04-Tv-6I8"/>
+                <constraint firstItem="vlv-jc-eQN" firstAttribute="top" secondItem="E5p-bS-Zll" secondAttribute="bottom" constant="5" id="Gv5-v7-8W9"/>
+                <constraint firstAttribute="trailing" secondItem="vlv-jc-eQN" secondAttribute="trailing" id="Jc3-ol-J4B"/>
+                <constraint firstItem="E5p-bS-Zll" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="baM-yq-5qm"/>
+                <constraint firstAttribute="bottom" secondItem="vlv-jc-eQN" secondAttribute="bottom" id="e6y-dh-4ev"/>
+                <constraint firstItem="E5p-bS-Zll" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="jcH-IO-6Nc"/>
+                <constraint firstItem="vlv-jc-eQN" firstAttribute="centerX" secondItem="E5p-bS-Zll" secondAttribute="centerX" id="kWA-hy-JFp"/>
+                <constraint firstAttribute="trailing" secondItem="E5p-bS-Zll" secondAttribute="trailing" constant="10" id="nYD-gu-hNd"/>
+                <constraint firstItem="vlv-jc-eQN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ttx-bO-DSh"/>
+            </constraints>
+            <size key="customSize" width="130" height="156"/>
+            <connections>
+                <outlet property="imageLab" destination="vlv-jc-eQN" id="g8A-qI-fde"/>
+                <outlet property="imageView" destination="E5p-bS-Zll" id="pno-WO-vVS"/>
+            </connections>
+            <point key="canvasLocation" x="-82" y="36"/>
+        </collectionViewCell>
+    </objects>
+</document>

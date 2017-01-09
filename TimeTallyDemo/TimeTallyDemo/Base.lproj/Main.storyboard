@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="btK-av-tWl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="rl7-EO-q0P">
+            <objects>
+                <viewController id="bB6-7l-JOC" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5ni-Ob-1UF"/>
+                        <viewControllerLayoutGuide type="bottom" id="EOs-pm-EAG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="isA-SQ-5G0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJz-yX-blR">
+                                <rect key="frame" x="147.5" y="64" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="crs-tP-gsX"/>
+                                    <constraint firstAttribute="height" constant="80" id="oKU-rD-JjA"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="增加"/>
+                                <connections>
+                                    <action selector="clickAddTally:" destination="bB6-7l-JOC" eventType="touchUpInside" id="Oz0-hK-K8w"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收入" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Tu-9g-jVu">
+                                <rect key="frame" x="17" y="64" width="120.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Vsv-zl-vlF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支出" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTX-yq-AqI">
+                                <rect key="frame" x="237.5" y="64" width="127.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="E0g-xQ-lrB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收入总计" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbz-Ai-XF5">
+                                <rect key="frame" x="10" y="104" width="127.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="neP-9e-CBQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支出总计" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zq6-zz-6hS">
+                                <rect key="frame" x="237.5" y="104" width="127.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YWz-cN-rlY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="oJz-yX-blR" firstAttribute="centerX" secondItem="isA-SQ-5G0" secondAttribute="centerX" id="6sD-1f-Mu6"/>
+                            <constraint firstItem="Pbz-Ai-XF5" firstAttribute="leading" secondItem="isA-SQ-5G0" secondAttribute="leading" constant="10" id="9No-TD-H7m"/>
+                            <constraint firstItem="oJz-yX-blR" firstAttribute="leading" secondItem="Pbz-Ai-XF5" secondAttribute="trailing" constant="10" id="C4n-mS-oGh"/>
+                            <constraint firstAttribute="trailing" secondItem="zq6-zz-6hS" secondAttribute="trailing" constant="10" id="FLD-hI-5s6"/>
+                            <constraint firstItem="1Tu-9g-jVu" firstAttribute="leading" secondItem="isA-SQ-5G0" secondAttribute="leadingMargin" constant="1" id="KZy-7H-5Lq"/>
+                            <constraint firstItem="zq6-zz-6hS" firstAttribute="top" secondItem="GTX-yq-AqI" secondAttribute="bottom" constant="10" id="Kb7-vC-TLz"/>
+                            <constraint firstItem="oJz-yX-blR" firstAttribute="leading" secondItem="1Tu-9g-jVu" secondAttribute="trailing" constant="10" id="RPO-kj-Ryy"/>
+                            <constraint firstItem="1Tu-9g-jVu" firstAttribute="top" secondItem="5ni-Ob-1UF" secondAttribute="bottom" id="TBX-HM-0gx"/>
+                            <constraint firstItem="Pbz-Ai-XF5" firstAttribute="top" secondItem="1Tu-9g-jVu" secondAttribute="bottom" constant="10" id="ULt-mW-bEw"/>
+                            <constraint firstItem="GTX-yq-AqI" firstAttribute="leading" secondItem="oJz-yX-blR" secondAttribute="trailing" constant="10" id="Y4H-Vx-5Ty"/>
+                            <constraint firstItem="GTX-yq-AqI" firstAttribute="top" secondItem="5ni-Ob-1UF" secondAttribute="bottom" id="aZs-ZU-ZMZ"/>
+                            <constraint firstItem="zq6-zz-6hS" firstAttribute="leading" secondItem="oJz-yX-blR" secondAttribute="trailing" constant="10" id="iC8-yI-yyc"/>
+                            <constraint firstItem="oJz-yX-blR" firstAttribute="top" secondItem="5ni-Ob-1UF" secondAttribute="bottom" id="kLk-9b-RRs"/>
+                            <constraint firstAttribute="trailing" secondItem="GTX-yq-AqI" secondAttribute="trailing" constant="10" id="yXR-lt-Gdg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rbW-JX-Y9V"/>
+                    <connections>
+                        <outlet property="expenseLab" destination="zq6-zz-6hS" id="yNW-dW-lOH"/>
+                        <outlet property="incomLab" destination="Pbz-Ai-XF5" id="uqu-kL-SzB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L0U-HR-Jke" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="106.59670164917542"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="f17-fF-lVi">
+            <objects>
+                <navigationController id="btK-av-tWl" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5VU-Ih-FhN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bB6-7l-JOC" kind="relationship" relationship="rootViewController" id="0Y6-bf-E2A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fkX-xh-pvd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="107"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="增加" width="37" height="37"/>
+    </resources>
+</document>
