@@ -44,6 +44,7 @@ static CoreDataOperations *instance = nil;
 //从数据库中删除 Tally表中某一数据
 - (void)deleteTally:(Tally*)object {
     [self.managedObjectContext deleteObject:object];
+    [self saveTally];
 }
 
 //保存
